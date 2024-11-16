@@ -16,14 +16,57 @@
 
 <body>
   <!-- Navbar -->
-
+  <nav class="navbar navbar-expand-lg" style="background-color: #FFFFFF;">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center w-100 gap-5 my-auto">
+        <div>
+          <a class="navbar-brand fw-bolder me-auto" style="color: #006BFF;" href="#">RumahKita.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto me-5">
+            <a class="nav-link active me-3" style="color: #A6AEBF; font-weight: 300" aria-current="page" href="#">Home</a>
+            <a class="nav-link mx-3" style="color: #A6AEBF; font-weight: 300" href="#">Beranda</a>
+            <a class="nav-link mx-3" style="color: #A6AEBF; font-weight: 300" href="#">Layanan Kami</a>
+            <a class="nav-link mx-3" style="color: #A6AEBF; font-weight: 300" href="#">Portofolio</a>
+            <a class="nav-link mx-3" style="color: #A6AEBF; font-weight: 300" href="#">Contact</a>
+          </div>
+        </div>
+        <div>
+          <a class="nav-link">
+            <button type="button" class="btn btn-sm ms-auto px-5" style="background-color: #091057; color: #FFFFFF;">Gallery</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- End Navbar -->
   <!-- Beranda -->
-  <section id="beranda"></section>
+  <section class="home  position-relative" id="home">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="hero-tagline my-auto">
+          <h1>Wujudkan Hunian Impian Anda </h1>
+          <h2>Bersama RumahKita.com</h2>
+
+          <p>
+              RumahKita.com hadir untuk membantu Anda mewujudkan hunian ideal, 
+              dengan layanan terpercaya untuk kebutuhan rumah dan interior Anda.
+          </p>
+          <a class="btn button-secondary" href="#" role="button">Layanan Kami</a>
+
+        </div>
+      </div>
+      <img
+        src="Assets/Img/Background.jpg"
+        alt=""
+        class="position-absolute start-0 bottom-0 img-hero"
+      />
+    </div>
+  </section>
   <!-- End Beranda -->
-  <!-- Dashboard -->
-  <section id="dashboard"></section>
-  <!-- End Dashboard -->
   <!--Layanan  -->
   <section id="layanan">
     <div class="container text-center mb-5">
@@ -158,21 +201,146 @@
   <!-- End Portofolio -->
 
   <!-- Testimoni -->
-  <section id="testimoni">
-    <div>Testimoni Klien</div>
+  <section class="fitur mt-5 overflow-hidden" id="fitur">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h2>Testimoni</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, odio? Ad, vel.</p>
+        </div>
+      </div>
+      <div class="testimonial-container">
+        <div class="testimonial-item">
+          <h3>"Desain Rumah yang bagus"</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
+          <img src="Assets/Img/Pesan3.png" alt="Sophia Moore">
+          <div class="job-title">CEO at Webflow Agency</div>
+          <div class="website">Sophia Moore</div>
+        </div>
+        <div class="testimonial-item">
+          <h3>"Pelayanan yang sangat memuaskan"</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
+          <img src="Assets/Img/Pesan1 (2).png" alt="Adam Smith">
+          <div class="job-title">Webflow Developer</div>
+          <div class="website">Adam Smith</div>
+        </div>
+        <div class="testimonial-item">
+          <h3>RumahKita.con mewujudkan rumah impian</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
+          <img src="Assets/Img/Pesan1 (1).png" alt="Mike Wari">
+          <div class="job-title">Developer</div>
+          <div class="website">Mike Wari</div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- End Testimoni -->
-  <!-- About Us -->
-  <section id="aboutUs"></section>
-  <!-- End About U -->
+
   <!-- FAQ -->
   <section id="faq"></section>
   <!-- FAQ -->
   <!-- Contact Us -->
-  <section id="contactUs"></section>
+  <div class="section-title">
+    <div class="overlay">
+      <div class="col-12 text-center mt-5">
+        <h2>Kontak Kami</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, odio? Ad, vel.</p>
+      </div>
+    </div>
+  </div>
+  <section class="kontak" id="kontak">
+    <div class="backround-overlay d-flex align-items-center">
+    <div class="container">
+      <div class="row d-flex flex-lg-row flex-md-column flex-sm-column flex-xs-column ">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-md-3 mx-auto">
+          <div class="card card-kontak">
+            <div class="card-body">
+              <h3 class="text-center">Kontak Kami Melalui Email</h3>
+              <form class="d-flex flex-column">
+                <div class="mb-3">
+                  <label for="inputEmail5" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="inputPesan5" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <a class="btn button-third my-5 mx-auto" href="#" role="button">Submit</a>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-md-3 mx-auto">
+        <div class="content-kontak">
+        <h3>Butuh Konsultasi....? 
+          Silakan kontak kami, Kami siap membantu Anda kapan pun..</h3>
+        <div class="row mt-4">
+          <h6>Kontak: </h6>
+          <div class="row row-kontak">
+            <p><img src="Assets/Img/geo-alt.png" alt="" class="me-3"> Alamat: Jl. Selokan Mataram No 12 Yogyakarta Indonesia</p>
+          </div>
+          <div class="row">
+            <p><img src="Assets/Img/telephone-fill.png" alt="" class="me-3"> Telpn: 082-1657-6667-0111</p>
+          </div>
+          <div class="row">
+            <p><img src="Assets/Img/envelope-open.png" alt="" class="me-3"> Email: RumahKita@gmail.com</p>
+          </div>
+          <h6>For your information</h6>
+          <div class="row">
+            <p><img src="" alt="" class="me-3">Untuk menghubungi kami melalui Whatsapp, 
+              Anda dapat menekan icon whatsaap yang ada pada website Kami. Terima Kasih</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
   <!-- End Contact Us -->
   <!-- Footer -->
-  <footer></footer>
+  <footer class="footer my-5 mx-auto">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>RumahKita.com</h2>
+        </div>
+        <div class="footer-section">
+            <h3>Layanan</h3>
+            <ul>
+                <li>Desain Rumah</li>
+                <li>Desain Interior</li>
+                <li>Halo Tukang</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Menu</h3>
+            <ul>
+                <li>Layanan</li>
+                <li>Portofolio</li>
+                <li>Testimoni</li>
+                <li>Kontak Kami</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Media Sosial</h3>
+            <div class="social-icons">
+                <a href="#"><img src="Assets/Img/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="Assets/Img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="Assets/Img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Assets/Img/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2024 All Rights Reserved</p>
+</div>
   <!-- End Footer -->
   <script src="assets/js/indexScript.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
