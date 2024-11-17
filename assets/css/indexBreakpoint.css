@@ -54,6 +54,37 @@
     font-size: 30px;
     font-weight: 500;
   }
+  @media (max-width: 768px) {
+    section.kontak {
+      height: auto; /* Biarkan tinggi otomatis pada layar kecil */
+      padding: 20px 10px; /* Tambahkan padding agar konten tidak terlalu sempit */
+    }
+  }
+  @media (max-width: 480px) {
+    section.kontak {
+      background-position: top; /* Gambar lebih fokus pada bagian atas untuk layar kecil */
+    }
+  }
+  @media (max-width: 768px) {
+    section.kontak .content-kontak {
+      padding: 15px; /* Kurangi padding untuk layar sedang */
+    }
+  }
+  @media (max-width: 480px) {
+    section.kontak .content-kontak h3 {
+      font-size: 22px;
+    }
+    section.kontak .content-kontak p {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 768px) {
+    section.kontak .backround-overlay {
+      flex-direction: column; /* Ubah menjadi kolom */
+      align-items: center; /* Rata tengah */
+    }
+  }
+  
   
   /* Fitur Rumah */
   section.fitur h2{

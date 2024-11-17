@@ -19,34 +19,35 @@
 </head>
 
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #FFFFFF;">
+  <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: #FFFFFF; position: sticky; top: 0; z-index: 100;">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center w-100 gap-5 my-auto">
-        <div>
-          <a class="navbar-brand fw-bolder me-auto" style="color: #006BFF;" href="#">RumahKita.com</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="d-flex justify-content-between align-items-center w-100 gap-5 my-auto">
+            <div>
+                <a class="navbar-brand fw-bolder me-auto" style="color: #006BFF;" href="#">RumahKita.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto me-5">
+                    <a class="nav-link mx-3" href="#home">Beranda</a>
+                    <a class="nav-link mx-3" href="#layanan">Layanan Kami</a>
+                    <a class="nav-link mx-3" href="#portofolio">Portofolio</a>
+                    <a class="nav-link mx-3" href="#kontak">Contact</a>
+                </div>
+            </div>
+            <div>
+                <a class="nav-link">
+                    <button type="button" class="btn btn-sm ms-auto px-5 my-auto" style="background-color: #091057; color: #FFFFFF;">Gallery</button>
+                </a>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto me-5">
-            <a class="nav-link active me-3" aria-current="page" href="#">Home</a>
-            <a class="nav-link mx-3" href="#">Beranda</a>
-            <a class="nav-link mx-3" href="#">Layanan Kami</a>
-            <a class="nav-link mx-3" href="#">Portofolio</a>
-            <a class="nav-link mx-3" href="#">Contact</a>
-          </div>
-        </div>
-        <div>
-          <a class="nav-link">
-            <button type="button" class="btn btn-sm ms-auto px-5 my-auto" style="background-color: #091057; color: #FFFFFF;">Gallery</button>
-          </a>
-        </div>
-      </div>
     </div>
-  </nav>
+</nav>
+
+
   <!-- End Navbar -->
   <!-- Beranda -->
   <section class="home  position-relative" id="home">
@@ -257,6 +258,7 @@
       </div>
     </div>
   </div>
+  
   <section class="kontak" id="kontak">
     <div class="backround-overlay d-flex align-items-center">
     <div class="container">
@@ -311,7 +313,7 @@
   </section>
   <!-- End Contact Us -->
   <!-- Footer -->
-  <footer class="footer my-5 mx-auto">
+  <section class="footer my-5 mx-auto">
     <div class="footer-container">
         <div class="footer-brand">
             <h2>RumahKita.com</h2>
@@ -343,7 +345,7 @@
             </div>
         </div>
     </div>
-</footer>
+</section>
 <div class="footer-bottom">
   <p>© 2024 All Rights Reserved</p>
 </div>
