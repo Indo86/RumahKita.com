@@ -78,7 +78,7 @@ body{
 
 #home{
   background-image: url(../img/Picture5.png);
-  max-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-size: cover;
 }
@@ -149,6 +149,9 @@ section#harga table tbody tr td{
   font-weight: bold;
 }
 
+section#harga h5{
+  font-weight: bold;
+}
 
 /* footer */
 
