@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+  z-index: 2;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #fff;
+  height: 100%;
+}
+
+/* navbar style */
+.navbar{
+  z-index: 3;
+}
+.navbar-nav .nav-link {
+  color: #929ECC;
+  font-size: 16px;
+  font-weight: normal; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5A9FD4; 
+}
+
+
+.button-secondary{
+  position: relative;
+  background-color: #2245E3;
+  color: #fff;
+  font-weight: normal ;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+  transition: transform 0.2s;
+  width: 175px;
+  height: 44px;
+  cursor: pointer;
+
+}
+
+.button-primary{
+  position: relative;
+  background-color: #f9f9f9;
+  color: #3b5bdb;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+  transition: transform 0.2s;
+  width: 264px;
+  height: 100px;
+  cursor: pointer;
+}
+.button-third{
+  position: relative;
+  background-color: #3b5bdb;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+  width: 364px;
+  height: 50px;
+  cursor: pointer;
+}
+
+
+/* home */
+
+#home{
+  background-image: url(../img/Picture5.png);
+  max-height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.hero-tagline{
+  height: 391px;
+  width: 630px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+.hero-tagline h1{
+  color: #000;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  margin-top: 20px;
+  z-index: -1;
+}
+.hero-tagline h2{
+  font-size: 36px;
+  color: #2245E3;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 30px;
+  width: 85%;
+}
+
+.hero-tagline p{
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 38px;
+  width: 85%;
+}
+
+.button-sm-primary{
+  width: 237px;
+  height: 70px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.img-hero{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.accsent-img{
+  z-index: 1;
+}
+
+
+
+/* harga desain */
+
+section#harga table thead tr th{
+  background-color: blue;
+  color:white;
+}
+
+section#harga table tbody tr td{
+  font-weight: bold;
+}
+
+
+/* footer */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #3b49df;
+  color: white;
+  padding: 70px 70px 200px 50px;/*Format: top right bottom left*/
+  text-align: center;
+  width: 100%;
+  max-width: 1128px;
+  height: 100%;
+  max-height: 434px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: flex-start;
+  padding: 0 20px; 
+  
+}
+
+.footer-brand h2 {
+  margin-right: 5;
+  color: #fff;
+  text-align: left;
+}
+
+.footer-section {
+  min-width: 150px;
+  text-align: left
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300px;
+}
