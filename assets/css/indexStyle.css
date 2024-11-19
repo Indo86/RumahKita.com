@@ -3,6 +3,7 @@
 :root{
   --pr-color: #048853;
   --pr-color2: #fff
+
 }
 
 *{
@@ -231,7 +232,6 @@ h2{
   color: #fff;
   font-size: 24px;
   transition: all .2s ease-out;
-
 
 }
 
