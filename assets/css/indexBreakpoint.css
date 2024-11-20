@@ -57,7 +57,7 @@
   @media (max-width: 768px) {
     section.kontak {
       height: auto; /* Biarkan tinggi otomatis pada layar kecil */
-      padding: 20px 10px; /* Tambahkan padding agar konten tidak terlalu sempit */
+      /* Tambahkan padding agar konten tidak terlalu sempit */
     }
   }
   @media (max-width: 480px) {

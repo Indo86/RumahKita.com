@@ -293,7 +293,7 @@ section.rekomendasiRumah{
 .card-rumah:hover .card-body p{
   color: #fff;
   transition: all ease-in-out .3s;
-
+ 
 }
 .infografik-container {
   display: flex;
@@ -301,7 +301,7 @@ section.rekomendasiRumah{
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .infografik-item {
@@ -316,16 +316,17 @@ section.rekomendasiRumah{
 .infografik-item img {
   width: 99px;
   height: 99px;
-  margin-bottom: 10px;
 }
 
 .infografik-item h3 {
   font-size: 24px;
-  margin-bottom: 10px;
+  text-align: center;
+
 }
 
 .infografik-item p {
-  font-size: 20px;
+  font-size: 14px;
+  margin: 0;
 }
 
 /* fitur rumah */
@@ -343,10 +344,10 @@ section.fitur{
 .testimonial-item {
   background-color: #ffff;
   border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  width: 500px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
   border: none;
 }
 
@@ -378,6 +379,68 @@ section.fitur{
   font-size: 14px;
   color: #000;
   margin-top: 10px;
+}
+
+.slick-track {
+  display: flex !important; /* Ganti layout default */
+  gap: 20px; /* Jarak antar kartu */
+}
+
+.slick-slide {
+  padding-x: 0px;
+  display: flex;
+  align-items: center; /* Pusatkan konten secara vertikal */
+  justify-content: center; /* Pusatkan konten secara horizontal */
+}
+
+
+/* Styling untuk custom arrows */
+.custom-arrow {
+  background: transparent; /* Hilangkan background default */
+  border: none; /* Hilangkan border */
+  
+  font-size: 24px; /* Ukuran panah */
+  color: #007bff; /* Warna panah */
+  cursor: pointer;
+  z-index: 100; /* Pastikan arrows di atas carousel */
+}
+
+/* Warna saat aktif */
+.custom-arrow.active-arrow {
+  color: #ff5722; /* Ubah warna sesuai preferensi */
+}
+
+/* Warna saat hover (opsional) */
+.custom-arrow:hover {
+  color: #ff5722;
+}
+
+/* Posisi arrows */
+.slick-prev {
+  left: -50px; /* Atur jarak panah kiri */
+  top: 50%; /* Tempatkan di tengah slider */
+  transform: translateY(-50%);
+}
+
+.slick-next {
+  right: -50px; /* Atur jarak panah kanan */
+  top: 50%; /* Tempatkan di tengah slider */
+  transform: translateY(-50%);
+}
+
+/* Styling untuk dots */
+.slick-dots {
+  bottom: -30px; /* Atur jarak dots dari carousel */
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  font-size: 12px; /* Ukuran dots */
+  color: #ccc; /* Warna default */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff; /* Warna dots aktif */
 }
 
 /* kontak */
@@ -429,9 +492,6 @@ section.kontak .content-kontak a{
 }
 
 section.kontak .card-kontak{
-  padding: 30px;
-  width: 552px;
-  height: 570px;
   padding: 20px;
   margin: auto;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -459,9 +519,13 @@ section.kontak .card-kontak h3{
 
 section.kontak .card-kontak input.form-control{
   height: 70px;
-  background-color: #fff;
+  background-color: #C4C4C4;
   padding: 10px;
   font-size: 14px; /* Ukuran teks lebih kecil di layar kecil */
+}
+
+section.kontak .card-kontak textarea.form-control{
+  background-color:  #C4C4C4;
 }
 
 section.kontak .card-kontak .button-submit{
