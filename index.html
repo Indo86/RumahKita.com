@@ -432,15 +432,15 @@
       slidesToShow: 2,
       slidesToScroll: 2,
       arrows: true,
-      dots: true, // Menampilkan navigasi carousel (dots)
-    prevArrow: '<button type="button" class="slick-prev custom-arrow d-flex flex-column justify-content-center"><i class="fas fa-chevron-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next custom-arrow d-flex flex-column justify-content-center"><i class="fas fa-chevron-right"></i></button>',
+      dots: true, 
+      prevArrow: '<button type="button" class="slick-prev custom-arrow d-flex flex-column justify-content-center"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next custom-arrow d-flex flex-column justify-content-center"><i class="fas fa-chevron-right"></i></button>',
     });
 
-    // Tambahkan logika untuk mengatur kelas aktif
+    
   $('.custom-arrow').on('click', function() {
-    $('.custom-arrow').removeClass('active-arrow'); // Hapus kelas dari semua arrow
-    $(this).addClass('active-arrow'); // Tambahkan kelas ke arrow yang diklik
+    $('.custom-arrow').removeClass('active-arrow'); 
+    $(this).addClass('active-arrow'); 
   });
   });
 

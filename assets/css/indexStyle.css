@@ -382,65 +382,63 @@ section.fitur{
 }
 
 .slick-track {
-  display: flex !important; /* Ganti layout default */
-  gap: 20px; /* Jarak antar kartu */
+  display: flex !important; 
+  gap: 20px; 
 }
 
 .slick-slide {
   padding-x: 0px;
   display: flex;
-  align-items: center; /* Pusatkan konten secara vertikal */
-  justify-content: center; /* Pusatkan konten secara horizontal */
+  align-items: center; 
+  justify-content: center; 
 }
 
 
-/* Styling untuk custom arrows */
+
 .custom-arrow {
-  background: transparent; /* Hilangkan background default */
-  border: none; /* Hilangkan border */
+  background: transparent; 
+  border: none; 
   
-  font-size: 24px; /* Ukuran panah */
-  color: #007bff; /* Warna panah */
+  font-size: 24px; 
+  color: #007bff; 
   cursor: pointer;
-  z-index: 100; /* Pastikan arrows di atas carousel */
+  z-index: 100; 
 }
 
-/* Warna saat aktif */
 .custom-arrow.active-arrow {
-  color: #ff5722; /* Ubah warna sesuai preferensi */
+  color: #ff5722; 
 }
 
-/* Warna saat hover (opsional) */
 .custom-arrow:hover {
   color: #ff5722;
 }
 
-/* Posisi arrows */
+
 .slick-prev {
-  left: -50px; /* Atur jarak panah kiri */
-  top: 50%; /* Tempatkan di tengah slider */
+  left: -50px; 
+  top: 50%; 
   transform: translateY(-50%);
 }
 
 .slick-next {
-  right: -50px; /* Atur jarak panah kanan */
-  top: 50%; /* Tempatkan di tengah slider */
+  right: -50px; 
+  top: 50%; 
   transform: translateY(-50%);
 }
 
-/* Styling untuk dots */
+
 .slick-dots {
-  bottom: -30px; /* Atur jarak dots dari carousel */
+  bottom: -30px; 
   text-align: center;
 }
 
 .slick-dots li button:before {
-  font-size: 12px; /* Ukuran dots */
-  color: #ccc; /* Warna default */
+  font-size: 12px; 
+  color: #ccc; 
 }
 
 .slick-dots li.slick-active button:before {
-  color: #007bff; /* Warna dots aktif */
+  color: #007bff; 
 }
 
 /* kontak */
