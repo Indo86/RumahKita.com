@@ -27,6 +27,7 @@ body.lb-disable-scrolling{
   outline:0;
   
 }
+
 .lightbox .lb-image{
   display:block;
   height:auto;
@@ -55,7 +56,8 @@ body.lb-disable-scrolling{
 
   .lb-outerContainer:after{content:"";
     display:table;
-    clear:both}.lb-loader{top:43%;
+    clear:both}
+    .lb-loader{top:43%;
     height:25%;
     width:100%}
   
@@ -170,3 +172,45 @@ body.lb-disable-scrolling{
   .lb-data .lb-close:hover{cursor:pointer;
     opacity:1
   }
+
+  @media screen and (max-width: 900px) {
+    .lightbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .lb-outerContainer{
+      width: 80%; /* 80% dari lebar layar */
+      height: auto; /* otomatis mengikuti proporsi konten */
+    }
+
+    .lb-container {
+      width: 80%; /* 80% dari lebar layar */
+      height: auto; /* otomatis mengikuti proporsi konten */
+    }
+
+    .lb-image{
+      width: 80%; /* 80% dari lebar layar */
+      height: auto; /* otomatis mengikuti proporsi konten */
+  }
+}
+
+@media screen and (max-width: 376px) {
+
+  .lb-outerContainer{
+    width: 50%;
+    height: auto;
+  }
+
+  .lb-container {
+    width: 50%;
+    height: auto;
+  }
+
+  .lb-image{
+    width: 50%;
+    height: auto;
+}
+}
