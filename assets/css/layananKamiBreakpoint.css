@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .card-body-top {
+      flex-direction: column; /* Atur menjadi kolom */
+      text-align: center;
+    }
+  
+    .card-body-top .image img {
+      width: 100%; /* Gambar memenuhi lebar */
+      height: auto; /* Sesuaikan tinggi */
+    }
+  
+    .card-body-top .content {
+      margin-top: 15px;
+    }
+  
+    .btn {
+      width: 100%; /* Tombol memenuhi lebar */
+    }
+  }
