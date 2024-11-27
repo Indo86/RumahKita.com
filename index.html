@@ -50,27 +50,28 @@
 </nav>
   <!-- End Navbar -->
   <!-- Beranda -->
-  <section class="home  position-relative" id="home">
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="hero-tagline my-auto">
-          <h1>Wujudkan Hunian Impian Anda </h1>
-          <h2>Bersama RumahKita.com</h2>
-
-          <p>
-              RumahKita.com hadir untuk membantu Anda mewujudkan hunian ideal, 
-              dengan layanan terpercaya untuk kebutuhan rumah dan interior Anda.
-          </p>
-          <a class="btn button-secondary" href="#" role="button">Layanan Kami</a>
-          <a class="btn button-secondary" href="#" role="button">Hubungi Kami</a>
-
+  <section class="home d-flex flex-column justify-content-center" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 col-lg-9 col-md-12">
+          <div class="hero-tagline my-auto p-4 d-flex flex-column gap-4">
+            <div class="main-heading">
+              <h1>Wujudkan Hunian Impian Anda </h1>
+              <h2>Bersama RumahKita.com</h2>
+            </div>
+            <div class="description">
+                <p>
+                  RumahKita.com hadir untuk membantu Anda mewujudkan hunian ideal, 
+                  dengan layanan terpercaya untuk kebutuhan rumah dan interior Anda.
+                </p>
+            </div>
+            <div class="button-group d-flex flex-row gap-3">
+              <a class="btn button-secondary" href="#" role="button">Layanan Kami</a>
+              <a class="btn button-secondary" href="#" role="button">Hubungi Kami</a>
+            </div>
+          </div>
         </div>
       </div>
-      <img
-        src="Assets/Img/Background.jpg"
-        alt=""
-        class="position-absolute start-0 bottom-0 img-hero"
-      />
     </div>
   </section>
   <!-- End Beranda -->
@@ -212,7 +213,7 @@
 
       <div class="row mt-5">
         <div class="col-12 text-center">
-          <a class="btn button-primary" href="galeri.html" role="button">Gallery -></a>
+          <a class="btn button-primary" href="galeri.html" role="button">Gallery</a>
         </div>
       </div>
     </div>
@@ -230,11 +231,11 @@
       </div>
       <div class="testimonial-container">
 
-        <div class="testimonial-item mb-2 mt-2">
+        <div class="testimonial-item mb-2 mt-2  d-flex flex-column align-items-start">
           <h3>"Desain Rumah yang bagus"</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
-          <div class="user d-flex flex-row gap-3">
+          <div class="user d-flex gap-3">
             <div class="image">
               <img src="Assets/Img/Pesan3.png" alt="Sophia Moore" class="m-0">
             </div>
@@ -245,13 +246,13 @@
          </div>
         </div>
 
-        <div class="testimonial-item mb-2 mt-2">
+        <div class="testimonial-item mb-2 mt-2 d-flex flex-column align-items-start">
           <h3>"Pelayanan yang sangat memuaskan"</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
           
          
-          <div class="user d-flex flex-row gap-3">
+          <div class="user d-flex gap-3">
             <div class="image">
               <img src="Assets/Img/Pesan1 (2).png" alt="Adam Smith" class="m-0">
             </div>
@@ -262,11 +263,11 @@
          </div>
         </div>
 
-        <div class="testimonial-item mb-2 mt-2">
+        <div class="testimonial-item mb-2 mt-2 d-flex flex-column align-items-start">
           <h3>"RumahKita.con mewujudkan rumah impian"</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
-         <div class="user d-flex flex-row gap-3">
+         <div class="user d-flex gap-3">
             <div class="image">
               <img src="Assets/Img/Pesan1 (1).png" alt="Mike Wari" class="m-0" >
             </div>
@@ -277,11 +278,11 @@
          </div>
         </div>
         <!--  -->
-        <div class="testimonial-item mb-2 mt-2">
+        <div class="testimonial-item mb-2 mt-2 d-flex flex-column align-items-start">
           <h3>"Desain Rumah yang bagus"</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
-          <div class="user d-flex flex-row gap-3">
+          <div class="user d-flex gap-3">
             <div class="image">
               <img src="Assets/Img/Pesan3.png" alt="Sophia Moore" class="m-0">
             </div>
@@ -292,11 +293,11 @@
          </div>
         </div>
         <!--  -->
-        <div class="testimonial-item mb-2 mt-2">
+        <div class="testimonial-item mb-2 mt-2 d-flex flex-column align-items-start">
           <h3>"Desain Rumah yang bagus"</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
-          <div class="user d-flex flex-row gap-3">
+          <div class="user d-flex gap-3">
             <div class="image">
               <img src="Assets/Img/Pesan3.png" alt="Sophia Moore" class="m-0">
             </div>
@@ -435,8 +436,39 @@
       dots: true, 
       prevArrow: '<button type="button" class="slick-prev custom-arrow d-flex flex-column justify-content-center"><i class="fas fa-chevron-left"></i></button>',
       nextArrow: '<button type="button" class="slick-next custom-arrow d-flex flex-column justify-content-center"><i class="fas fa-chevron-right"></i></button>',
+      responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: false,
+        nextArrow: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        prevArrow: false,
+        nextArrow: false
+      }
+    }
+  ]
     });
 
+    $('.testimonial-item .user').f
     
   $('.custom-arrow').on('click', function() {
     $('.custom-arrow').removeClass('active-arrow'); 
