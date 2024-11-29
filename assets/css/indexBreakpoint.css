@@ -43,9 +43,7 @@
 }
 
 @media screen and (max-width: 476px) {
-  #home .hero-tagline .main-heading{
-  
-  }
+
 
   #home .hero-tagline .main-heading h1{
     font-size: 25px;
@@ -67,7 +65,7 @@
     justify-content: center;
   }
 
-  // slide testimonial
+   /*slide testimonial
   /* .testimonial-item img {
   width: 60px;
   height: 60px;
@@ -102,7 +100,7 @@
   font-size: 12px;
   color: #999;
   margin-top: 10px;
-  flex-dirextion: column;
+  flex-direction: column;
   text-align: center;
   width: 100%;
 }
@@ -230,13 +228,9 @@
     border: none;
   }
     
-  }
+  
   
   @media screen and (max-width: 576px) {
-    .hero-tagline h1{
-      /* line-height: 20px; */
-      
-    }
   
     .img-hero{
       width: 75%;
@@ -328,6 +322,21 @@
     }
   }
   
+  /* FAQ */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .faq-section h2 {
+      font-size: 2rem;
+    }
+  
+    .faq-list li {
+      font-size: 1rem;
+    }
+  }
+  /* FAQ */
   
   /* footer */
   footer .footer-brand{
