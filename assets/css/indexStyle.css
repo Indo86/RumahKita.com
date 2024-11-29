@@ -554,14 +554,50 @@ section.kontak .card-kontak .button-submit{
 }
 
 /* FAQ */
+.faq{
+  height: 100%;
+  width: 100%;
+  background: url(../Img/Picture5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Agar gambar memenuhi area */
+  background-position: center; /* Agar gambar berada di tengah */
+  position: relative; /* Pastikan elemen ini memiliki posisi relatif */
+  overflow: hidden; /* Hilangkan elemen keluar */
+}
 
+.heading h1{
+  color: #000;
+  font-weight: bold;
+  font-size: 36px;
+  /* line-height: 50px; */
+  /* margin-top: 20px; */
+  z-index: -1;
+}
+.heading h2{
+  font-size: 36px;
+  color: #2245E3;
+  font-weight: bold;
+  /* margin-bottom: 60px; */
+  /* margin-top: 20px; */
+  line-height: 30px;
+  width: 100%;
+}
+
+.description p{
+  font-size: 14px;
+  color: #000;
+  /* margin-bottom: 60px; */
+  /* margin-top: 20px; */
+  line-height: 38px;
+  width: 100%;
+}
+
+.accsent-img{
+  z-index: 1;
+}
 /* FAQ */
 
 /* footer */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
 
 .footer {
   background-color: #3b49df;
