@@ -554,6 +554,11 @@ section.kontak .card-kontak .button-submit{
 }
 
 /* FAQ */
+#faq{
+  /* background: linear-gradient(160deg, #2245E3, #BFECFF); */
+  height: 100vh;
+  width: 100%;
+}
 .faq{
   height: 100%;
   width: 100%;
@@ -565,35 +570,75 @@ section.kontak .card-kontak .button-submit{
   overflow: hidden; /* Hilangkan elemen keluar */
 }
 
-.heading h1{
-  color: #000;
-  font-weight: bold;
-  font-size: 36px;
-  /* line-height: 50px; */
-  /* margin-top: 20px; */
-  z-index: -1;
-}
-.heading h2{
-  font-size: 36px;
-  color: #2245E3;
-  font-weight: bold;
-  /* margin-bottom: 60px; */
-  /* margin-top: 20px; */
-  line-height: 30px;
-  width: 100%;
+.text-box {
+  background: white; /* Warna latar belakang kotak */
+  padding: 10px;/* Ruang di dalam kotak */
+  font-size: 56px; /* Ukuran font */
+  font-weight: bold; /* Teks tebal */
+  color: black; /* Warna teks */
+  text-align: center; /* Teks rata tengah */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  position: relative; /* Untuk elemen dekoratif */
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
-.description p{
-  font-size: 14px;
-  color: #000;
-  /* margin-bottom: 60px; */
-  /* margin-top: 20px; */
-  line-height: 38px;
-  width: 100%;
+/* Garis dekoratif */
+.text-box::after {
+  content: '';
+  display: block;
+  width: 50%; /* Panjang garis */
+  height: 4px; /* Tinggi garis */
+  background: blue; /* Warna garis */
+  margin-left: auto; /* Margin untuk menempatkan garis di tengah */
 }
 
 .accsent-img{
   z-index: 1;
+}
+.faq-container {
+  max-width: 800px;
+  margin-left: 200px; 
+  margin-top: 50px;
+  margin-bottom: 175px;
+}
+
+.faq-container h1 {
+  font-size: 48px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: bold;
+}
+
+.faq-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.faq-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #A5A6F6;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.faq-question {
+  font-size: 16px;
+  color: #000;
+  flex-grow: 1;
+}
+.arrow {
+  font-size: 1.2rem;
+  color: #A5A6F6;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+  transform: rotate(90deg);
 }
 /* FAQ */
 
