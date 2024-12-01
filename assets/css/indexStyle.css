@@ -346,7 +346,7 @@ section.fitur{
 .testimonial-item {
   background-color: #ffff;
   border-radius: 8px;
-  padding: 100px;
+  padding: 30px;
   /* width: 500px; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border: none;
@@ -732,3 +732,136 @@ section.kontak .card-kontak .button-submit{
   background-color: #1ebe59;
   text-decoration: none;
 }
+
+
+/* animation component */
+
+#layanan .heading-section span,
+#layanan .heading-section h2,
+.hero-tagline, 
+#layanan .card-layanan-container,
+#layanan .card-layanan-1,
+#layanan .card-layanan-2,
+#layanan .card-layanan-3,
+#layanan .button-container,
+#layanan .button-container .button-primary,
+#portofolio .heading-section,
+#portofolio .heading-section h2,
+#portofolio .heading-section span,
+#portofolio .galeri-portofolio,
+#portofolio .galeri-portofolio .img-1,
+#portofolio .galeri-portofolio .img-2,
+#portofolio .galeri-portofolio .img-3,
+#portofolio .galeri-portofolio .img-4,
+#portofolio .galeri-portofolio .img-5,
+#portofolio .galeri-portofolio .img-6,
+#portofolio .galeri-portofolio .img-7,
+#portofolio .galeri-portofolio .img-8,
+#portofolio .infografik-container,
+#portofolio .infografik-container .infografik-item-1,
+#portofolio .infografik-container .infografik-item-2,
+#portofolio .infografik-container .infografik-item-3,
+#portofolio .button-gallery,
+#portofolio .button-gallery .button-primary,
+#fitur .heading-testimoni,
+#fitur .heading-testimoni h2,
+#fitur .heading-testimoni p,
+#fitur .testimonial-container,
+#faq .slogan,
+#faq .slogan .text-1,
+#faq .slogan .text-2,
+#faq .slogan .text-3,
+#kontak .card-kontak,
+#kontak .content-kontak,
+.faq-container,
+.faq-container h1,
+.faq-container .faq-item,
+.section-title .heading-section,
+.section-title .heading-section h2,
+.section-title .heading-section p
+{
+  opacity: 0;
+}
+
+#layanan .heading-section span.animate__animated,
+#layanan .heading-section h2.animate__animated,
+.hero-tagline.animate__animated,
+#layanan .card-layanan-container .animate__animated,
+"#layanan .card-layanan-1.animate__animated,
+"#layanan .card-layanan-2.animate__animated,
+"#layanan .card-layanan-3.animate__animated,
+#layanan .button-container.animate__animated,
+#layanan .button-container .button-primary.animate__animated,
+#portofolio .heading-section.animate__animated ,
+#portofolio .heading-section h2.animate__animated,
+#portofolio .heading-section span.animate__animated,
+#portofolio .galeri-portofolio.animate__animated,
+#portofolio .galeri-portofolio .img-1.animate__animated,
+#portofolio .galeri-portofolio .img-2.animate__animated,
+#portofolio .galeri-portofolio .img-3.animate__animated,
+#portofolio .galeri-portofolio .img-4.animate__animated,
+#portofolio .galeri-portofolio .img-5.animate__animated,
+#portofolio .galeri-portofolio .img-6.animate__animated,
+#portofolio .galeri-portofolio .img-7.animate__animated,
+#portofolio .galeri-portofolio .img-8.animate__animated,
+#portofolio .infografik-container,
+#portofolio .infografik-container .infografik-item-1.animate__animated,
+#portofolio .infografik-container .infografik-item-2.animate__animated,
+#portofolio .infografik-container .infografik-item-3.animate__animated,
+#portofolio .button-gallery.animate__animated,
+#portofolio .button-gallery .button-primary.animate__animated,
+#fitur .heading-testimoni.animate__animated,
+#fitur .heading-testimoni h2.animate__animated,
+#fitur .heading-testimoni p.animate__animated,
+#fitur .testimonial-container.animate__animated
+#fitur .testimonial-container .testimonial-item.animate__animated
+#faq .slogan.animate__animated,
+#faq .slogan .text-1.animate__animated,
+#faq .slogan .text-2.animate__animated,
+#faq .slogan .text-3.animate__animated,
+#kontak .card-kontak.animate__animated,
+#kontak .content-kontak.animate__animated
+.faq-container.animate__animated,
+.faq-container h1.animate__animated,
+.faq-container .faq-item.animate__animated,
+.section-title .heading-section.animate__animated,
+.section-title .heading-section h2.animate__animated,
+.section-title .heading-section p.animate__animated{
+  opacity: 1;
+}
+
+#layanan .card-layanan-1,
+#portofolio .heading-section h2,
+#portofolio .galeri-portofolio .img-1,
+#portofolio .galeri-portofolio .img-2,
+#portofolio .galeri-portofolio .img-3,
+#portofolio .galeri-portofolio .img-4
+#portofolio .infografik-container .infografik-item-3,
+#faq .slogan,
+#faq .slogan .text-1
+{
+  animation-delay: 0.2s
+}
+#layanan .card-layanan-2,
+#portofolio .heading-section span,
+#portofolio .infografik-container .infografik-item-2,
+#layanan .button-container .button-primary,
+#faq .slogan .text-2,
+.faq-container h1
+{
+  animation-delay: 0.4s
+}
+#layanan .card-layanan-3,
+#portofolio .galeri-portofolio .img-5,
+#portofolio .galeri-portofolio .img-6,
+#portofolio .galeri-portofolio .img-7,
+#portofolio .galeri-portofolio .img-8,
+#portofolio .infografik-container .infografik-item-3
+,#faq .slogan .text-3,
+.faq-container .faq-item{
+  animation-delay: 0.6s
+}
+
+/* #layanan .button-container .button-primary{
+  animation-delay: 0.8s
+} */
