@@ -259,3 +259,55 @@ body {
   background-color: #1ebe59;
   text-decoration: none;
 }
+
+
+/* animation layanan kami */
+#home .card-layanan-container,
+#home .card-layanan-container .card-layanan-1,
+#home .card-layanan-container .card-layanan-2,
+#home .card-layanan-container .card-layanan-3,
+#harga .content-desain-rumah .head-desain-rumah,
+#harga .content-desain-rumah .desc-desain-rumah,
+#harga .content-desain-rumah .card-1,
+#harga .content-desain-rumah .card-2,
+#harga .content-desain-rumah .card-3,
+#harga .content-desain-interior .head-desain-interior,
+#harga .content-desain-interior .desc-desain-interior,
+#harga .content-desain-interior .card-1,
+#harga .content-desain-interior .card-2,
+#harga .content-desain-interior .card-3{
+  opacity: 0
+}
+
+#home .card-layanan-container.animate__animated,
+#home .card-layanan-container .card-layanan-1.animate__animated,
+#home .card-layanan-container .card-layanan-2.animate__animated,
+#home .card-layanan-container .card-layanan-3.animate__animated,
+#harga .content-desain-rumah .head-desain-rumah.animate__animated,
+#harga .content-desain-rumah .desc-desain-rumah.animate__animated,
+#harga .content-desain-rumah .card-1.animate__animated,
+#harga .content-desain-rumah .card-2.animate__animated,
+#harga .content-desain-rumah .card-3.animate__animated,
+#harga .content-desain-interior .head-desain-interior.animate__animated,
+#harga .content-desain-interior .desc-desain-interior.animate__animated,
+#harga .content-desain-interior .card-1.animate__animated,
+#harga .content-desain-interior .card-2.animate__animated,
+#harga .content-desain-interior .card-3.animate__animated
+{
+  opacity: 1
+}
+
+
+#home .card-layanan-container .card-layanan-1{
+  animation-delay: 0.2s
+}
+
+
+#home .card-layanan-container .card-layanan-2{
+  animation-delay: 0.5s
+}
+
+
+#home .card-layanan-container .card-layanan-3{
+  animation-delay: 0.8s
+}

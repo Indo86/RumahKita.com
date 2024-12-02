@@ -10,6 +10,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/layananKamiStyle.css">
   <link rel="stylesheet" href="assets/css/layananKamiBreakpoint.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -48,9 +49,9 @@
   <section class="home position-relative" id="home">
     <div class="container">
       <div class="col-lg-8 col-md-10 col-sm-12 col-12 p-lg-5 p-md-4 p-sm-2 p-1">
-        <div class="row d-flex flex-column flex-wrap gap-3">
+        <div class="row d-flex flex-column flex-wrap gap-3 card-layanan-container" >
 
-          <div class="card-layanan">
+          <div class="card-layanan card-layanan-1">
             <div class="card-body-top d-flex flex-row gap-3">
               <div class="image">
                 <img src="assets/img/Desain Rumah.png" alt="" class="">
@@ -64,7 +65,7 @@
             </div>
           </div>
 
-          <div class="card-layanan">
+          <div class="card-layanan card-layanan-2">
             <div class="card-body-top d-flex flex-row gap-3">
               <div class="image">
                 <img src="assets/img/Desain Interior.png" alt="" class="">
@@ -78,7 +79,7 @@
             </div>
           </div>
 
-          <div class="card-layanan">
+          <div class="card-layanan card-layanan-3">
             <div class="card-body-top d-flex flex-row gap-3">
               <div class="image">
                 <img src="assets/img/Halo Tukang.png" alt="" class="">
@@ -103,9 +104,9 @@
   <!-- End Home -->
   <!-- Harga Desain Rumah -->
   <section id="harga" class="mt-5">
-    <div class="container">
-      <h1 class="text-center">Desain Rumah</h1>
-      <p style="text-align: justify;">Transformasi ruang menjadi tempat yang nyaman, fungsional, dan penuh gaya kini
+    <div class="container content-desain-rumah">
+      <h1 class="text-center head-desain-rumah">Desain Rumah</h1>
+      <p style="text-align: justify;" class="desc-desain-rumah">Transformasi ruang menjadi tempat yang nyaman, fungsional, dan penuh gaya kini
         lebih mudah dengan
         layanan desain interior kami. Tim desainer berpengalaman kami siap membantu mewujudkan impian Anda, mulai dari
         konsep hingga detail akhir. Apapun gaya dan kebutuhan Anda, kami hadir untuk menciptakan ruang yang mencerminkan
@@ -113,7 +114,7 @@
         <a href="#">Click disini untuk pemesanan layanan</a>
       </p>
 
-      <div class="card shadow">
+      <div class="card shadow card-1">
         <div class="card-body">
           <h5>Small and Medium Sized Building</h5>
           <table class="table table-striped table-hover">
@@ -153,7 +154,7 @@
         </div>
       </div>
 
-      <div class="card shadow mt-4">
+      <div class="card shadow mt-4 card-2">
         <div class="card-body">
           <h5>Big Sized Building</h5>
           <table class="table table-striped table-hover">
@@ -185,7 +186,7 @@
         </div>
       </div>
 
-      <div class="card shadow mt-4">
+      <div class="card shadow mt-4 card-3">
         <div class="card-body">
           <h5>Extra Big Sized Building</h5>
           <table class="table table-striped table-hover">
@@ -209,9 +210,9 @@
   <!-- End harga Desain Rumah -->
   <!-- Harga Desain Rumah -->
   <section id="harga" class="mt-5">
-    <div class="container">
-      <h1 class="text-center">Desain Interior</h1>
-      <p style="text-align: justify;">Transformasi ruang menjadi tempat yang nyaman, fungsional, dan penuh gaya kini
+    <div class="container content-desain-interior">
+      <h1 class="text-center head-desain-interior">Desain Interior</h1>
+      <p style="text-align: justify;" class="desc-desain-interior">Transformasi ruang menjadi tempat yang nyaman, fungsional, dan penuh gaya kini
         lebih mudah dengan layanan
         desain interior kami. Tim desainer berpengalaman kami siap membantu mewujudkan impian Anda, mulai dari konsep
         hingga detail akhir. Apapun gaya dan kebutuhan Anda, kami hadir untuk menciptakan ruang yang mencerminkan
@@ -219,7 +220,7 @@
         <a href="#">Click disini untuk pemesanan layanan</a>
       </p>
 
-      <div class="card shadow">
+      <div class="card shadow card-1">
         <div class="card-body">
           <h5>Small and Medium Sized Building</h5>
           <table class="table table-striped table-hover">
@@ -259,7 +260,7 @@
         </div>
       </div>
 
-      <div class="card shadow mt-4">
+      <div class="card shadow mt-4 card-2">
         <div class="card-body">
           <h5>Big Sized Building</h5>
           <table class="table table-striped table-hover">
@@ -291,7 +292,7 @@
         </div>
       </div>
 
-      <div class="card shadow mt-4">
+      <div class="card shadow mt-4 card-3">
         <div class="card-body">
           <h5>Extra Big Sized Building</h5>
           <table class="table table-striped table-hover">
@@ -352,10 +353,13 @@
     <p>© 2024 All Rights Reserved</p>
   </div>
   <!-- End Footer -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/layananKami.js"></script>
+  
     <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float">
       <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
