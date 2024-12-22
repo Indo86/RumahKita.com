@@ -18,6 +18,11 @@
   #home .hero-tagline .button-group .btn{
     font-size: 17px;
   }
+
+  section.kontak .backround-overlay{
+    padding-top: 20px
+  }
+
 }
 
 @media screen and (max-width: 510px) {
@@ -34,6 +39,10 @@
 
   #home .hero-tagline .button-group .btn{
     font-size: 15px;
+  }
+
+  section.kontak .backround-overlay{
+    padding-top: 20px
   }
 
 }
@@ -119,6 +128,10 @@
   flex-wrap: wrap;
   align-items: center;
   width: 100%
+}
+
+section.kontak .backround-overlay{
+  padding-top: 20px
 }
 
 
