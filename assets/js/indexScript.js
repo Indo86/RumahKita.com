@@ -76,6 +76,39 @@ $("#layanan .card-layanan-container").waypoint(function(){
   $("#layanan .card-layanan-3").addClass(animate_fadeInUp)
 }, offset1)
 
+  // FAQ Functionality
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+          item.classList.toggle('active');
+
+          // Close other items if only one should be open at a time
+          faqItems.forEach(otherItem => {
+              if (otherItem !== item) {
+                  otherItem.classList.remove('active');
+              }
+          });
+      });
+  });
+  document.querySelectorAll('.arrow').forEach(arrow => {
+    arrow.addEventListener('mouseenter', function () {
+        const answer = this.nextElementSibling;
+        if (answer) {
+            answer.style.display = 'block'; // Tampilkan jawaban
+            this.classList.add('open'); // Tambahkan rotasi pada panah
+        }
+    });
+
+    arrow.addEventListener('mouseleave', function () {
+        const answer = this.nextElementSibling;
+        if (answer) {
+            answer.style.display = 'none'; // Sembunyikan jawaban
+            this.classList.remove('open'); // Kembalikan posisi panah
+        }
+    });
+});
+
 $("#layanan .button-container").waypoint(function(){
   $(this.element).addClass(animate_fadeInUp)
   $("#layanan .button-primary").addClass(animate_fadeInUp)
@@ -155,4 +188,5 @@ $('.section-title .heading-section').waypoint(function(){
 }, offset1)
 
 });
+
 

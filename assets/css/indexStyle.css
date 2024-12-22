@@ -555,51 +555,52 @@ section.kontak .card-kontak .button-submit{
 }
 
 /* FAQ */
-#faq{
-  /* background: linear-gradient(160deg, #2245E3, #BFECFF); */
+#faq {
   height: 100vh;
   width: 100%;
 }
-.faq{
+
+.faq {
   height: 100%;
   width: 100%;
   background: url(../Img/Picture5.jpg);
   background-repeat: no-repeat;
-  background-size: cover; /* Agar gambar memenuhi area */
-  background-position: center; /* Agar gambar berada di tengah */
-  position: relative; /* Pastikan elemen ini memiliki posisi relatif */
-  overflow: hidden; /* Hilangkan elemen keluar */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .text-box {
-  background: white; /* Warna latar belakang kotak */
-  padding: 10px;/* Ruang di dalam kotak */
-  font-size: 56px; /* Ukuran font */
-  font-weight: bold; /* Teks tebal */
-  color: black; /* Warna teks */
-  text-align: center; /* Teks rata tengah */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
-  position: relative; /* Untuk elemen dekoratif */
+  background: white;
+  padding: 10px;
+  font-size: 56px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
   margin-bottom: 10px;
   display: inline-block;
 }
 
-/* Garis dekoratif */
 .text-box::after {
   content: '';
   display: block;
-  width: 50%; /* Panjang garis */
-  height: 4px; /* Tinggi garis */
-  background: blue; /* Warna garis */
-  margin-left: auto; /* Margin untuk menempatkan garis di tengah */
+  width: 50%;
+  height: 4px;
+  background: blue;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.accsent-img{
+.accsent-img {
   z-index: 1;
 }
+
 .faq-container {
   max-width: 800px;
-  margin-left: 200px; 
+  margin-left: 200px;
   margin-top: 50px;
   margin-bottom: 175px;
 }
@@ -608,13 +609,16 @@ section.kontak .card-kontak .button-submit{
   font-size: 48px;
   margin-bottom: 100px;
   text-align: center;
-  font-size: bold;
+  font-weight: bold;
 }
 
 .faq-item {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  position: relative;
+  padding: 10px;
+  transition: background 0.3s ease;
 }
 
 .faq-circle {
@@ -630,6 +634,7 @@ section.kontak .card-kontak .button-submit{
   color: #000;
   flex-grow: 1;
 }
+
 .arrow {
   font-size: 1.2rem;
   color: #A5A6F6;
@@ -639,6 +644,40 @@ section.kontak .card-kontak .button-submit{
 }
 
 .arrow:hover {
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+  background: rgba(165, 166, 246, 0.1);
+  border-radius: 10px;
+}
+
+.faq-item:hover .faq-answer {
+  display: block;
+  opacity: 1;
+  max-height: 500px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.arrow.open {
   transform: rotate(90deg);
 }
 /* FAQ */
@@ -788,9 +827,9 @@ section.kontak .card-kontak .button-submit{
 #layanan .heading-section h2.animate__animated,
 .hero-tagline.animate__animated,
 #layanan .card-layanan-container .animate__animated,
-"#layanan .card-layanan-1.animate__animated,
-"#layanan .card-layanan-2.animate__animated,
-"#layanan .card-layanan-3.animate__animated,
+#layanan .card-layanan-1.animate__animated,
+#layanan .card-layanan-2.animate__animated,
+#layanan .card-layanan-3.animate__animated,
 #layanan .button-container.animate__animated,
 #layanan .button-container .button-primary.animate__animated,
 #portofolio .heading-section.animate__animated ,
