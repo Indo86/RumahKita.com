@@ -596,12 +596,6 @@ section.kontak .card-kontak .button-submit{
   z-index: 1;
 }
 
-.faq-container {
-  max-width: 800px;
-  margin-left: 200px;
-  margin-top: 50px;
-  margin-bottom: 175px;
-}
 
 .faq-container h1 {
   font-size: 48px;
@@ -616,7 +610,7 @@ section.kontak .card-kontak .button-submit{
   margin-bottom: 30px;
   position: relative;
   padding: 10px;
-  transition: background 0.3s ease;
+  transition: background() 0.3s ease;
 }
 
 .faq-circle {
