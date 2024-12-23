@@ -244,8 +244,6 @@ h2{
   transition: all .2s ease-out;
 
 }
-
-
 /* Search Temukan Rumah Impian */
 
 
@@ -330,6 +328,7 @@ section.rekomendasiRumah{
   font-size: 14px;
   margin: 0;
 }
+/* the bug */
 
 /* fitur rumah */
 section.fitur{
@@ -518,7 +517,7 @@ section.kontak .card-kontak{
 
   
 }
-input, textarea, button {
+input, textarea, button.btn-kirim {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 15px;
@@ -772,6 +771,7 @@ section.kontak .card-kontak .button-submit{
   text-decoration: none;
 }
 
+/* end the bug */
 
 /* animation component */
 
@@ -900,7 +900,3 @@ section.kontak .card-kontak .button-submit{
 .faq-container .faq-item{
   animation-delay: 0.6s
 }
-
-/* #layanan .button-container .button-primary{
-  animation-delay: 0.8s
-} */
